@@ -1,0 +1,1252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03C7E6FB-D3B1-422E-868F-15D07720FF02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MiClickDerecho.My.MyApplication</StartupObject>
+    <RootNamespace>MiClickDerecho</RootNamespace>
+    <AssemblyName>Mi CLickDerecho</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <PublishUrl>C:\MiClick\setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>es-CO</TargetCulture>
+    <ProductName>MiClickDerecho</ProductName>
+    <PublisherName>ClickDerecho</PublisherName>
+    <SuiteName>MiClickDerecho</SuiteName>
+    <ApplicationRevision>1399</ApplicationRevision>
+    <ApplicationVersion>2.5.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Mi CLickDerecho.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Mi CLickDerecho.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>239054AE859F96ABC170DD4F9712F72086AC7342</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconclick2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>mcdkey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4137.9688, Culture=neutral, PublicKeyToken=a4292a325f69b123, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.16.0\lib\net45\Google.Apis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.16.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.16.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.16.0\lib\net45\Google.Apis.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.16.0.637, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v3.1.16.0.637\lib\portable-net45+netcore45+wpa81+wp8\Google.Apis.Drive.v3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.16.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mail, Version=3.0.15091.1036, Culture=neutral, PublicKeyToken=6dc438ab78a525b3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=2.0.9.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlBackup.NET.2.0.9.5\lib\net45\MySqlBackup.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, PublicKeyToken=431cba815f6a8b5b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql" />
+    <Import Include="MySql.Data" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="MySql.Data.MySqlClient.Authentication" />
+    <Import Include="MySql.Data.MySqlClient.Memcached" />
+    <Import Include="MySql.Data.MySqlClient.Properties" />
+    <Import Include="MySql.Data.MySqlClient.Replication" />
+    <Import Include="MySql.Data.Types" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="bhole.vb" />
+    <Compile Include="Contacts.vb" />
+    <Compile Include="CONTA\Form_ce.Designer.vb">
+      <DependentUpon>Form_ce.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_ce.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_comprobantes.Designer.vb">
+      <DependentUpon>Form_comprobantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_comprobantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_contadocs.Designer.vb">
+      <DependentUpon>Form_contadocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_contadocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_credito.Designer.vb">
+      <DependentUpon>Form_credito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_credito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_Informescontables.Designer.vb">
+      <DependentUpon>Form_Informescontables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_Informescontables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_ntcr.Designer.vb">
+      <DependentUpon>Form_ntcr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_ntcr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_puc.Designer.vb">
+      <DependentUpon>Form_puc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_puc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_pucniffselect.Designer.vb">
+      <DependentUpon>Form_pucniffselect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_pucniffselect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_pucniif.Designer.vb">
+      <DependentUpon>Form_pucniif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_pucniif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_puc_Select.Designer.vb">
+      <DependentUpon>Form_puc_Select.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_puc_Select.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_rc.Designer.vb">
+      <DependentUpon>Form_rc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_rc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_cunday.Designer.vb">
+      <DependentUpon>Form_cunday.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_cunday.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_descuentos.Designer.vb">
+      <DependentUpon>Form_descuentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_descuentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_informeTurnos.Designer.vb">
+      <DependentUpon>Form_informeTurnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_informeTurnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_informe_ventas.Designer.vb">
+      <DependentUpon>Form_informe_ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_informe_ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_inf_diario.Designer.vb">
+      <DependentUpon>Form_inf_diario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_inf_diario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_install.Designer.vb">
+      <DependentUpon>Form_install.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_install.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMppal.Designer.vb">
+      <DependentUpon>FrmMppal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMppal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\FormPedidodeProveedor.Designer.vb">
+      <DependentUpon>FormPedidodeProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\FormPedidodeProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_cocina.Designer.vb">
+      <DependentUpon>Form_cocina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_cocina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_produccion.Designer.vb">
+      <DependentUpon>Form_produccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_produccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_producc_opciones.Designer.vb">
+      <DependentUpon>Form_producc_opciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_producc_opciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\form_Cartera.Designer.vb">
+      <DependentUpon>form_Cartera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\form_Cartera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiConex.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\FormDomicilio.Designer.vb">
+      <DependentUpon>FormDomicilio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\FormDomicilio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_avanzado.Designer.vb">
+      <DependentUpon>Form_avanzado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_avanzado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_cajabancos.Designer.vb">
+      <DependentUpon>Form_cajabancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_cajabancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_bkp.Designer.vb">
+      <DependentUpon>Form_bkp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_bkp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_cloudconfig.Designer.vb">
+      <DependentUpon>Form_cloudconfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_cloudconfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_CONFIG.Designer.vb">
+      <DependentUpon>Form_CONFIG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_CONFIG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_egreso_nomina.Designer.vb">
+      <DependentUpon>Form_egreso_nomina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_egreso_nomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_egreso_nomina_ver.Designer.vb">
+      <DependentUpon>Form_egreso_nomina_ver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_egreso_nomina_ver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTA\Form_impuesto.Designer.vb">
+      <DependentUpon>Form_impuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTA\Form_impuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_empleado_passch.Designer.vb">
+      <DependentUpon>Form_empleado_passch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_empleado_passch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_lic.Designer.vb">
+      <DependentUpon>Form_lic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_lic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_NOMINA.Designer.vb">
+      <DependentUpon>Form_NOMINA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_NOMINA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_update.Designer.vb">
+      <DependentUpon>Form_update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\Form_devoluciones.Designer.vb">
+      <DependentUpon>Form_devoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\Form_devoluciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_activacion.Designer.vb">
+      <DependentUpon>Form_activacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_activacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_bodega.Designer.vb">
+      <DependentUpon>Form_bodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_bodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\Form_caja.Designer.vb">
+      <DependentUpon>Form_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\Form_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_cetegoriasProds.Designer.vb">
+      <DependentUpon>Form_cetegoriasProds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_cetegoriasProds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_devolucionescompras.Designer.vb">
+      <DependentUpon>Form_devolucionescompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_devolucionescompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\Form_sales.Designer.vb">
+      <DependentUpon>Form_sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\Form_sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\Form_ventaDomiciliolist.Designer.vb">
+      <DependentUpon>Form_ventaDomiciliolist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\Form_ventaDomiciliolist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\Form_verfactura.Designer.vb">
+      <DependentUpon>Form_verfactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\Form_verfactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCIONES\Form_empleados.Designer.vb">
+      <DependentUpon>Form_empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCIONES\Form_empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_informes.Designer.vb">
+      <DependentUpon>Form_informes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_informes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_movimientos.Designer.vb">
+      <DependentUpon>Form_movimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_productos.Designer.vb">
+      <DependentUpon>Form_productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS\Form_productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_contactos.Designer.vb">
+      <DependentUpon>Form_contactos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_contactos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moconn.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CONTA\Form_ce.resx">
+      <DependentUpon>Form_ce.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_comprobantes.resx">
+      <DependentUpon>Form_comprobantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_contadocs.resx">
+      <DependentUpon>Form_contadocs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_credito.resx">
+      <DependentUpon>Form_credito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_Informescontables.resx">
+      <DependentUpon>Form_Informescontables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_ntcr.resx">
+      <DependentUpon>Form_ntcr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_puc.resx">
+      <DependentUpon>Form_puc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_pucniffselect.resx">
+      <DependentUpon>Form_pucniffselect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_pucniif.resx">
+      <DependentUpon>Form_pucniif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_puc_Select.resx">
+      <DependentUpon>Form_puc_Select.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_rc.resx">
+      <DependentUpon>Form_rc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_cunday.resx">
+      <DependentUpon>Form_cunday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_descuentos.resx">
+      <DependentUpon>Form_descuentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_informeTurnos.resx">
+      <DependentUpon>Form_informeTurnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_informe_ventas.resx">
+      <DependentUpon>Form_informe_ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_inf_diario.resx">
+      <DependentUpon>Form_inf_diario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_install.resx">
+      <DependentUpon>Form_install.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMppal.resx">
+      <DependentUpon>FrmMppal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\FormPedidodeProveedor.resx">
+      <DependentUpon>FormPedidodeProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\Form_cocina.resx">
+      <DependentUpon>Form_cocina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\form_Cartera.resx">
+      <DependentUpon>form_Cartera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\Form_produccion.resx">
+      <DependentUpon>Form_produccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\Form_producc_opciones.resx">
+      <DependentUpon>Form_producc_opciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\FormDomicilio.resx">
+      <DependentUpon>FormDomicilio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_avanzado.resx">
+      <DependentUpon>Form_avanzado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_cajabancos.resx">
+      <DependentUpon>Form_cajabancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_bkp.resx">
+      <DependentUpon>Form_bkp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_cloudconfig.resx">
+      <DependentUpon>Form_cloudconfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_CONFIG.resx">
+      <DependentUpon>Form_CONFIG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_egreso_nomina.resx">
+      <DependentUpon>Form_egreso_nomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_egreso_nomina_ver.resx">
+      <DependentUpon>Form_egreso_nomina_ver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTA\Form_impuesto.resx">
+      <DependentUpon>Form_impuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_empleado_passch.resx">
+      <DependentUpon>Form_empleado_passch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_lic.resx">
+      <DependentUpon>Form_lic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_NOMINA.resx">
+      <DependentUpon>Form_NOMINA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_update.resx">
+      <DependentUpon>Form_update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\Form_devoluciones.resx">
+      <DependentUpon>Form_devoluciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_activacion.resx">
+      <DependentUpon>Form_activacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\Form_bodega.resx">
+      <DependentUpon>Form_bodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\Form_caja.resx">
+      <DependentUpon>Form_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\Form_cetegoriasProds.resx">
+      <DependentUpon>Form_cetegoriasProds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\Form_devolucionescompras.resx">
+      <DependentUpon>Form_devolucionescompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\Form_sales.resx">
+      <DependentUpon>Form_sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\Form_ventaDomiciliolist.resx">
+      <DependentUpon>Form_ventaDomiciliolist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\Form_verfactura.resx">
+      <DependentUpon>Form_verfactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCIONES\Form_empleados.resx">
+      <DependentUpon>Form_empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_informes.resx">
+      <DependentUpon>Form_informes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\Form_movimientos.resx">
+      <DependentUpon>Form_movimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS\Form_productos.resx">
+      <DependentUpon>Form_productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_contactos.resx">
+      <DependentUpon>Form_contactos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mcdkey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\cuadro-blanco.png" />
+    <None Include="Resources\marco_png__tutoria.png" />
+    <None Include="Resources\marco2azul.png" />
+    <None Include="Resources\marco_transparente_3.png" />
+    <None Include="Resources\cuadroblue.png" />
+    <None Include="Resources\cuadroblue2.png" />
+    <None Include="Resources\cuadromarco.PNG" />
+    <None Include="Resources\categories.png" />
+    <None Include="Resources\llamada.png" />
+    <None Include="Resources\llamada2.png" />
+    <None Include="Resources\ayuda.jpg" />
+    <None Include="Resources\ayudaame.png" />
+    <None Include="Resources\backup.jpg" />
+    <None Include="Resources\license.png" />
+    <None Include="Resources\cloud_up.png" />
+    <None Include="Resources\icono_factura_electro.jpg" />
+    <None Include="Resources\lifeguardo.png" />
+    <None Include="Resources\limpiar.png" />
+    <None Include="Resources\add_row_icon.jpg" />
+    <Content Include="iconclick.ico" />
+    <Content Include="iconclick2.ico" />
+    <Content Include="mcdicon.ico" />
+    <Content Include="mcdicono.ico" />
+    <Content Include="Resources\7bbc440ba4f25.png" />
+    <Content Include="Resources\7bbc440ba4f25.png.bmp" />
+    <None Include="Resources\contabilidad-electrónica-opinión.jpg" />
+    <None Include="Resources\accountericon.png" />
+    <None Include="Resources\cloud-connect-icon.png" />
+    <None Include="Resources\cloud_down.png" />
+    <None Include="Resources\BACKPANEL.png" />
+    <None Include="Resources\BACKPANEL2.png" />
+    <None Include="Resources\clo2.png" />
+    <None Include="Resources\clo1.png" />
+    <None Include="Resources\arrowleft.png" />
+    <None Include="Resources\arrowright.png" />
+    <None Include="Resources\cooking-icon.png" />
+    <None Include="Resources\attachment.png" />
+    <None Include="Resources\arroba.png" />
+    <None Include="Resources\banner7.png" />
+    <None Include="Resources\banner8.jpg" />
+    <None Include="Resources\banner9.jpg" />
+    <None Include="Resources\cuadro-blanco1.png" />
+    <None Include="Resources\backk.png" />
+    <None Include="Resources\BOTONTAB.PNG" />
+    <None Include="Resources\button720.png" />
+    <None Include="Resources\bank_building.png" />
+    <None Include="Resources\Backspace2.png" />
+    <None Include="Resources\backspace1.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\butttonsvg2.png" />
+    <Content Include="Resources\cueroazul.jpg" />
+    <None Include="Resources\emaillogo.png" />
+    <None Include="Resources\mobile_menu_icon.png" />
+    <None Include="Resources\EGRESO.png" />
+    <None Include="Resources\icon-2.png" />
+    <None Include="Resources\domi_ico.png" />
+    <None Include="Resources\loader.gif" />
+    <None Include="Resources\malla3.png" />
+    <None Include="Resources\line.png" />
+    <None Include="Resources\line2.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\menuverde.jpg" />
+    <None Include="Resources\humo_en_degradado3.jpg" />
+    <None Include="Resources\manufacturing.png" />
+    <None Include="Resources\manufactur.png" />
+    <None Include="Resources\industry.png" />
+    <None Include="Resources\inmobi_icon1.jpg" />
+    <None Include="Resources\maximizar.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\delete_row_icon.jpg" />
+    <None Include="Resources\delete_row.png" />
+    <None Include="Resources\logo_miclickderecho.png" />
+    <None Include="Resources\export_icon.png" />
+    <None Include="Resources\menu-button.png" />
+    <None Include="Resources\DOCK22.png" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\FavotiresICON.png" />
+    <None Include="Resources\masicon.jpg" />
+    <None Include="Resources\menosicon.jpg" />
+    <None Include="Resources\menosicon.png" />
+    <None Include="Resources\masicon.png" />
+    <None Include="Resources\INVO2.PNG" />
+    <None Include="Resources\INVO3.PNG" />
+    <None Include="Resources\INVO.PNG" />
+    <None Include="Resources\menuicon.png" />
+    <None Include="Resources\DeleteSelected.png" />
+    <None Include="Resources\devoluciones_m.png" />
+    <Content Include="Resources\miclicklogoback.png" />
+    <None Include="Resources\miclicklogobackBLACK.png" />
+    <None Include="Resources\miclicklogotr.png" />
+    <None Include="Resources\miclicklogomi1.png" />
+    <None Include="Resources\miclicklogomioscuro.png" />
+    <Content Include="Resources\miicoclick.ico" />
+    <None Include="Resources\minimizar.png" />
+    <None Include="Resources\minimi.png" />
+    <None Include="Resources\xls-icone.png" />
+    <None Include="Resources\yellow.jpg" />
+    <None Include="Resources\xls-icon-3403.png" />
+    <None Include="Resources\xls-icon-3399.png" />
+    <None Include="packages.config" />
+    <None Include="Resources\zoo_app.png" />
+    <Content Include="pedido.ico" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\accounter2512.png" />
+    <Content Include="Resources\agregar.png" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\alert_animated.gif" />
+    <Content Include="Resources\Animated_Network.gif" />
+    <Content Include="Resources\animation.gif" />
+    <Content Include="Resources\ante.jpg" />
+    <Content Include="Resources\armenia-hotel-parqueadero.jpg" />
+    <Content Include="Resources\asignar.png" />
+    <Content Include="Resources\AtencioN.jpg" />
+    <None Include="Resources\back.png" />
+    <Content Include="Resources\background-1.png" />
+    <None Include="Resources\banner1.png" />
+    <None Include="Resources\barraazul.png" />
+    <None Include="Resources\banner-azul2.jpg" />
+    <None Include="Resources\banner_box3.gif" />
+    <None Include="Resources\banner95.jpg" />
+    <Content Include="Resources\bars_file-512.png" />
+    <Content Include="Resources\basic2-017_money_coins_chips-512.png" />
+    <Content Include="Resources\basic2-165_money_dollar-512.png" />
+    <None Include="Resources\binary-tree-icon.png" />
+    <None Include="Resources\billing-icon.png" />
+    <None Include="Resources\BlueSquareButton.png" />
+    <Content Include="Resources\bodega.png" />
+    <None Include="Resources\boos.png" />
+    <Content Include="Resources\BORRAR.jpg" />
+    <None Include="Resources\Botonazul.jpg" />
+    <None Include="Resources\botonbuscar.png" />
+    <None Include="Resources\BORRAR1.jpg" />
+    <None Include="Resources\boton-ir.png" />
+    <None Include="Resources\boss.png" />
+    <None Include="Resources\boton amarillo.png" />
+    <None Include="Resources\boton-irICONO.png" />
+    <None Include="Resources\boutonbleu.png" />
+    <Content Include="Resources\boxs.png" />
+    <None Include="Resources\BUT1.png" />
+    <None Include="Resources\BUTTTON1.png" />
+    <None Include="Resources\buttonborder.png" />
+    <None Include="Resources\buttonborder2.png" />
+    <None Include="Resources\buttonhi.png" />
+    <None Include="Resources\button_verde.png" />
+    <None Include="Resources\butttonsvg.png" />
+    <Content Include="Resources\BUYYY.png" />
+    <Content Include="Resources\BUYYYING.png" />
+    <Content Include="Resources\caja-de-software-PSD.jpg" />
+    <Content Include="Resources\caja-registradorA.png" />
+    <Content Include="Resources\calendario.png" />
+    <Content Include="Resources\calendarioicono.png" />
+    <Content Include="Resources\Cambioclave.gif" />
+    <Content Include="Resources\CANCEL.jpg" />
+    <Content Include="Resources\CANCEL.png" />
+    <Content Include="Resources\CANCELA.png" />
+    <Content Include="Resources\cancelNews.png" />
+    <Content Include="Resources\candado.png" />
+    <Content Include="Resources\candado_close.png" />
+    <Content Include="Resources\candado_open.png" />
+    <Content Include="Resources\cash-payments.png" />
+    <Content Include="Resources\Cash-Register-512.png" />
+    <None Include="Resources\cash.png" />
+    <Content Include="Resources\cashiericono.png" />
+    <Content Include="Resources\cashig.png" />
+    <Content Include="Resources\cashregister.png" />
+    <Content Include="Resources\cash_receiving.png" />
+    <Content Include="Resources\clickicon.ico" />
+    <Content Include="Resources\cliente.jpg" />
+    <Content Include="Resources\cliente.png" />
+    <None Include="Resources\CLIENTEGOMELO.jpg" />
+    <Content Include="Resources\clientemisterioso.png" />
+    <Content Include="Resources\clientes.bmp" />
+    <Content Include="Resources\clientes.png" />
+    <Content Include="Resources\clientes1.bmp" />
+    <Content Include="Resources\clientespago.png" />
+    <Content Include="Resources\clients-32531.jpg" />
+    <None Include="Resources\clock.png" />
+    <Content Include="Resources\COCACOLA.jpg" />
+    <None Include="Resources\combos.png" />
+    <Content Include="Resources\Common-Clients-IVR.png" />
+    <Content Include="Resources\COMPRAR.png" />
+    <None Include="Resources\config.JPG" />
+    <None Include="Resources\configur.png" />
+    <Content Include="Resources\CONFIGURAC.png" />
+    <None Include="Resources\Configuración.png" />
+    <Content Include="Resources\config_icon_original - copia.png" />
+    <None Include="Resources\connected1600.png" />
+    <Content Include="Resources\conseguir_clientes.jpg" />
+    <None Include="Resources\cotizacion.png" />
+    <None Include="Resources\cuadro_para_portadas.png" />
+    <None Include="Resources\cuadro_para_portadas2.png" />
+    <None Include="Resources\cuadro_de_text.png" />
+    <None Include="Resources\cuadro_de_text2.png" />
+    <None Include="Resources\cuadro_de_text3.png" />
+    <None Include="Resources\cuentas-por-cobrar.png" />
+    <None Include="Resources\cuentas-por-pagar.png" />
+    <Content Include="Resources\d2eccd8bce1.png" />
+    <Content Include="Resources\d5e5d037b0b005f.png" />
+    <Content Include="Resources\data_filter-icon.gif" />
+    <None Include="Resources\delete_256.png" />
+    <Content Include="Resources\Delete_Icon.png" />
+    <Content Include="Resources\delete_x.png" />
+    <None Include="Resources\diagram-1.png" />
+    <None Include="Resources\discount.jpg" />
+    <None Include="Resources\diskette.png" />
+    <None Include="Resources\disconnect-512.png" />
+    <None Include="Resources\disconnected1600.png" />
+    <Content Include="Resources\DJHJD.png" />
+    <Content Include="Resources\DOCK.png" />
+    <None Include="Resources\dock143985589.png" />
+    <Content Include="Resources\DOCK2.png" />
+    <Content Include="Resources\document2.png" />
+    <Content Include="Resources\documentIcon.png" />
+    <Content Include="Resources\documents.jpg" />
+    <Content Include="Resources\document_add.png" />
+    <None Include="Resources\domicilios.jpg" />
+    <None Include="Resources\domiciiioooo.png" />
+    <None Include="Resources\domicilo.gif" />
+    <None Include="Resources\download2.png" />
+    <Content Include="Resources\editar.png" />
+    <Content Include="Resources\edit_notes.png" />
+    <Content Include="Resources\eliminar.png" />
+    <Content Include="Resources\email.jpg" />
+    <Content Include="Resources\email.png" />
+    <None Include="Resources\empleados.png" />
+    <None Include="Resources\emails-300x300.jpg" />
+    <Content Include="Resources\empleo.jpg" />
+    <None Include="Resources\employee.png" />
+    <Content Include="Resources\EMPRESA.jpg" />
+    <None Include="Resources\empreza.png" />
+    <Content Include="Resources\error.png" />
+    <Content Include="Resources\Excel 2013.png" />
+    <Content Include="Resources\Excel.png" />
+    <None Include="Resources\Excel1.png" />
+    <Content Include="Resources\exclamation.png" />
+    <Content Include="Resources\Exit Full Screen.png" />
+    <None Include="Resources\EXITOTRO.png" />
+    <Content Include="Resources\fac.png" />
+    <Content Include="Resources\facturar_a_clientes_01.png" />
+    <Content Include="Resources\favicon.ico" />
+    <None Include="Resources\fermer-item.png" />
+    <Content Include="Resources\file_delete.png" />
+    <Content Include="Resources\filtering.png" />
+    <None Include="Resources\firmaazul.png" />
+    <Content Include="Resources\FloppySmall.png" />
+    <Content Include="Resources\folder_delete.png" />
+    <None Include="Resources\FondoBotonAzul.png" />
+    <None Include="Resources\FondoBotonRojo.png" />
+    <Content Include="Resources\fondocic.jpg" />
+    <None Include="Resources\form.png" />
+    <None Include="Resources\fondotrans.jpg" />
+    <Content Include="Resources\FotoliaM - copia.jpg" />
+    <None Include="Resources\fvp.png" />
+    <Content Include="Resources\Gastos.jpg" />
+    <Content Include="Resources\gastos.png" />
+    <None Include="Resources\globo.png" />
+    <Content Include="Resources\Google Drive alt.png" />
+    <Content Include="Resources\Google Drive alt_mirror.png" />
+    <Content Include="Resources\Google Drive.png" />
+    <Content Include="Resources\Google Drive_mirror.png" />
+    <None Include="Resources\graphic.png" />
+    <None Include="Resources\gracias.png" />
+    <None Include="Resources\green_rectangle.png" />
+    <Content Include="Resources\grid.png" />
+    <Content Include="Resources\guardar.jpg" />
+    <Content Include="Resources\History.png" />
+    <Content Include="Resources\IBMOeen.png" />
+    <Content Include="Resources\icon-edit.png" />
+    <None Include="Resources\Icon-Printe.png" />
+    <Content Include="Resources\iconhelp.png" />
+    <Content Include="Resources\Icono compras.png" />
+    <None Include="Resources\icono-c-nomina.png" />
+    <Content Include="Resources\icono-control-invetarios.png" />
+    <Content Include="Resources\icono-excel.jpg" />
+    <None Include="Resources\icono-excel1.jpg" />
+    <Content Include="Resources\iconoomos.png" />
+    <Content Include="Resources\icono_compras.png" />
+    <Content Include="Resources\icono_xls.gif" />
+    <Content Include="Resources\Iconstoccel.ico" />
+    <Content Include="Resources\Icon_delete.svg.png" />
+    <Content Include="Resources\iko.png" />
+    <Content Include="Resources\image013.png" />
+    <Content Include="Resources\images %281%29.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\impresora2.bmp" />
+    <None Include="Resources\Informaci.png" />
+    <None Include="Resources\inbox-download-512.png" />
+    <Content Include="Resources\information.png" />
+    <Content Include="Resources\informeGeneral.jpg" />
+    <None Include="Resources\informegeneral3.png" />
+    <Content Include="Resources\Internet Access.png" />
+    <None Include="Resources\inventario.png" />
+    <Content Include="Resources\Inventario3.png" />
+    <None Include="Resources\inventarioss.png" />
+    <None Include="Resources\invoices.png" />
+    <None Include="Resources\inventarios.png" />
+    <Content Include="Resources\join.png" />
+    <Content Include="Resources\karacia.jpg" />
+    <None Include="Resources\label_price.png" />
+    <None Include="Resources\keyboard.png" />
+    <Content Include="Resources\lapiz.png" />
+    <None Include="Resources\lapiz1.png" />
+    <None Include="Resources\licencia-software.png" />
+    <None Include="Resources\lapizico.png" />
+    <Content Include="Resources\licensemanage.png" />
+    <Content Include="Resources\lifeguard.ico" />
+    <Content Include="Resources\listados.png" />
+    <Content Include="Resources\Liv.png" />
+    <None Include="Resources\LLAMA.png" />
+    <None Include="Resources\loader1.gif" />
+    <None Include="Resources\loading2.gif" />
+    <Content Include="Resources\loading_trans.gif" />
+    <Content Include="Resources\login.png" />
+    <None Include="Resources\logo-pdf.png" />
+    <None Include="Resources\logomiclick.png" />
+    <None Include="Resources\logoclickder.png" />
+    <Content Include="Resources\LOGOS-TELEFONO-sin-fondo.png" />
+    <None Include="Resources\lonuevo_multipago_img.jpg" />
+    <None Include="Resources\magnifyin.png" />
+    <None Include="Resources\lonuevo_multipago_transp.png" />
+    <Content Include="Resources\mail_new.png" />
+    <None Include="Resources\mallatrans.gif" />
+    <None Include="Resources\mallatrans2.png" />
+    <None Include="Resources\mapLogo.png" />
+    <None Include="Resources\mapLogo1.png" />
+    <Content Include="Resources\man-160602_1280.png" />
+    <None Include="Resources\marco.png" />
+    <Content Include="Resources\megafono.png" />
+    <Content Include="Resources\MERCAR.jpg" />
+    <Content Include="Resources\MESpps.png" />
+    <None Include="Resources\miclicklogo.png" />
+    <Content Include="Resources\miclicklogomi.png" />
+    <Content Include="Resources\money.png" />
+    <Content Include="Resources\moneywallet.png" />
+    <Content Include="Resources\MonitorUse.png" />
+    <None Include="Resources\movimientos.png" />
+    <Content Include="Resources\mse_proteus_inventory_control2.jpg" />
+    <Content Include="Resources\Network-Icon1.png" />
+    <Content Include="Resources\Network_connection_vector.png" />
+    <None Include="Resources\no-product_3.png" />
+    <None Include="Resources\newwspend.png" />
+    <Content Include="Resources\not640.png" />
+    <None Include="Resources\ok-trans.png" />
+    <None Include="Resources\note-304229_960_720.png" />
+    <None Include="Resources\ok-transico.png" />
+    <None Include="Resources\notenew.jpg" />
+    <Content Include="Resources\ok.png" />
+    <Content Include="Resources\OKK.jpg" />
+    <Content Include="Resources\okKK.png" />
+    <None Include="Resources\okman.jpg" />
+    <None Include="Resources\Order-history-icon.png" />
+    <None Include="Resources\palestrantes.png" />
+    <None Include="Resources\package.png" />
+    <None Include="Resources\online.gif" />
+    <Content Include="Resources\onlinesupport.png" />
+    <None Include="Resources\Openfileiconmini.png" />
+    <Content Include="Resources\papelera-de-reciclaje.png" />
+    <None Include="Resources\pdf_download.png" />
+    <None Include="Resources\pedido.png" />
+    <None Include="Resources\Paymen.png" />
+    <None Include="Resources\pedidos.png" />
+    <None Include="Resources\pdficon.png" />
+    <None Include="Resources\pdfdown.jpg" />
+    <None Include="Resources\pedidoICONO.png" />
+    <None Include="Resources\pedidonew.png" />
+    <None Include="Resources\paycheck-icon-30200.png" />
+    <None Include="Resources\pdficon2.png" />
+    <None Include="Resources\pdf_ico.png" />
+    <None Include="Resources\passicon.png" />
+    <Content Include="Resources\pedidosicono.jpg" />
+    <Content Include="Resources\pen184079.jpg" />
+    <None Include="Resources\peoducts.gif" />
+    <None Include="Resources\pestana.png" />
+    <None Include="Resources\pestana2.png" />
+    <Content Include="Resources\pictureefault.jpg" />
+    <None Include="Resources\pos-icon-300x268.png" />
+    <None Include="Resources\pos-icon.png" />
+    <None Include="Resources\pin.gif" />
+    <None Include="Resources\PIN2.png" />
+    <None Include="Resources\plabdecuentas.png" />
+    <None Include="Resources\pos.jpg" />
+    <Content Include="Resources\POSIBLELOGO.png" />
+    <None Include="Resources\Price-Tag.jpg" />
+    <None Include="Resources\pric2e.png" />
+    <Content Include="Resources\price.png" />
+    <None Include="Resources\print-pdf_icon.png" />
+    <None Include="Resources\PRINTICON.png" />
+    <Content Include="Resources\procesos.bmp" />
+    <None Include="Resources\prodccion.png" />
+    <Content Include="Resources\Productonuevo.png" />
+    <None Include="Resources\programmer.png" />
+    <None Include="Resources\profile-icon-png-918.png" />
+    <Content Include="Resources\provv.jpg" />
+    <None Include="Resources\QUITAR.png" />
+    <None Include="Resources\quefinde-barra-azul-texto-hemeroteca.jpg" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\RC.png" />
+    <None Include="Resources\Registerdesk.png" />
+    <None Include="Resources\refresh.png" />
+    <Content Include="Resources\remove-from-database-icon.png" />
+    <Content Include="Resources\reset.png" />
+    <Content Include="Resources\ResumeRequest1.png" />
+    <None Include="Resources\signal.png" />
+    <None Include="Resources\signal.jpg" />
+    <None Include="Resources\RTGyxoxzc.png" />
+    <None Include="Resources\serv.jpg" />
+    <None Include="Resources\Smart-Contacts.png" />
+    <None Include="Resources\shoppingbasket-add.jpg" />
+    <None Include="Resources\servicios.png" />
+    <None Include="Resources\shipping-box-icon.png" />
+    <None Include="Resources\retouren.png" />
+    <None Include="Resources\services.png" />
+    <None Include="Resources\scooter.png" />
+    <None Include="Resources\signo-pesos.png" />
+    <None Include="Resources\salir-de-mi.png" />
+    <None Include="Resources\save-icon-5427.png" />
+    <None Include="Resources\send-message-icon.png" />
+    <None Include="Resources\sales_report_256.png" />
+    <None Include="Resources\sign_up_icon.png" />
+    <None Include="Resources\Semi-transparent.png" />
+    <None Include="Resources\servicioicon.png" />
+    <None Include="Resources\search-icon.png" />
+    <Content Include="Resources\Social-Media-Icon_Instagram_gray.jpg" />
+    <None Include="Resources\Software-Box.png" />
+    <None Include="Resources\SolidNavy.png" />
+    <Content Include="Resources\sombra-slide.png" />
+    <None Include="Resources\sombraslide2.png" />
+    <None Include="Resources\spend.png" />
+    <None Include="Resources\supplier.png" />
+    <None Include="Resources\support.png" />
+    <None Include="Resources\taxes.png" />
+    <None Include="Resources\textb.jpg" />
+    <None Include="Resources\textbox.png" />
+    <None Include="Resources\textfield-bg.gif" />
+    <None Include="Resources\tesoreria.png" />
+    <None Include="Resources\text-box-png-24066.png" />
+    <None Include="Resources\textboxborder.gif" />
+    <None Include="Resources\technician-cts-icon.png" />
+    <None Include="Resources\soporte.png" />
+    <None Include="Resources\square.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\table2.png" />
+    <None Include="Resources\table_free.jpg" />
+    <None Include="Resources\table3.jpg" />
+    <None Include="Resources\tabcontrol.jpg" />
+    <None Include="Resources\tabcontrol.png" />
+    <None Include="Resources\supporticon.png" />
+    <None Include="Resources\table7.png" />
+    <None Include="Resources\tablebusy.PNG" />
+    <Content Include="Resources\textura_fondo.jpg" />
+    <None Include="Resources\TuLogoAqui.png" />
+    <None Include="Resources\turno.png" />
+    <None Include="Resources\tpv.png" />
+    <None Include="Resources\tpvlogo.jpg" />
+    <None Include="Resources\title_background.png" />
+    <None Include="Resources\tile_back.jpg" />
+    <None Include="Resources\TitleBoxOrange.png" />
+    <None Include="Resources\trabajo.jpg" />
+    <None Include="Resources\trabajos.png" />
+    <None Include="Resources\tu-logo.png" />
+    <None Include="Resources\TitleBox.png" />
+    <None Include="Resources\TitleBoxGreen.png" />
+    <Content Include="Resources\unnamed.png" />
+    <None Include="Resources\untitledclick.png" />
+    <None Include="Resources\unnamedcon.png" />
+    <Content Include="Resources\update-drivers.ico" />
+    <None Include="Resources\update.png" />
+    <Content Include="Resources\User No-Frame.png" />
+    <None Include="Resources\user128.png" />
+    <None Include="Resources\user128copia.png" />
+    <None Include="Resources\usrtr.png" />
+    <None Include="Resources\User_Yuppie_1.png" />
+    <Content Include="Resources\Usuario02.jpg" />
+    <Content Include="Resources\usuarios.bmp" />
+    <None Include="Resources\view-icone.png" />
+    <None Include="Resources\view-icone-6308-128.png" />
+    <None Include="Resources\view-icone2.png" />
+    <None Include="Resources\webshop-icon.png" />
+    <Content Include="Resources\whatsapp.png" />
+    <None Include="Resources\wifiani.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" --msbuild-solution-path "$(SolutionPath)" -n --newline-flush -v 5.7</PostBuildEvent>
+  </PropertyGroup>
+</Project>
